@@ -104,6 +104,6 @@ shinyviewr <- function(
     session$sendCustomMessage(photo_recieved_loc, 'yay!');
 
     # Convert from array to more useful raster (and remove alpha channel)
-    grDevices::as.raster(sent_image[,,-4])
+    grDevices::as.raster(sent_image)
   })
 }
